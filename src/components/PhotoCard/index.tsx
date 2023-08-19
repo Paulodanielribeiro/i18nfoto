@@ -15,7 +15,8 @@ type Props = {
 }
 
 const PhotoCard = ({ photo }: Props) => {
-  const {t}= useTranslation();
+  const { t } = useTranslation();
+
   return (
     <PhotoLink to='/view' state={{ photo }}>
       <CardContainer>
