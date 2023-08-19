@@ -37,14 +37,14 @@ const PhotoView = () => {
           )}
 
           <PhotoCreationDate>
-            t('creationDate'): {photo.creationDate.toLocaleDateString()}
+            {t('creationDate')}: {photo.creationDate.toLocaleDateString()}
           </PhotoCreationDate>
         </InfoPanel>
       </PhotoPanel>
 
       <BackLinkPanel>
         <BackLink to='/'>
-          <BackButton>t('back')</BackButton>
+          <BackButton>{t('back')}</BackButton>
         </BackLink>
       </BackLinkPanel>
     </Container>

@@ -81,7 +81,7 @@ const Home = () => {
               setCriteria(e.target.checked ? 'relevant' : 'latest')
             }
           />
-          <CriteriaOptionLabel>t('mostrelevant')</CriteriaOptionLabel>
+          <CriteriaOptionLabel>{t('mostrelevant')}</CriteriaOptionLabel>
 
           <CriteriaOptionButton
             checked={criteria == 'latest'}
@@ -89,10 +89,10 @@ const Home = () => {
               setCriteria(e.target.checked ? 'latest' : 'relevant')
             }
           />
-          <CriteriaOptionLabel>t('mostrecent')</CriteriaOptionLabel>
+          <CriteriaOptionLabel>{t('mostrecent')}</CriteriaOptionLabel>
         </CriteriaPanel>
 
-        <SearchButton onClick={() => searchPhotos()}>t('search')</SearchButton>
+        <SearchButton onClick={() => searchPhotos()}>{t('search')}</SearchButton>
       </SearchArea>
 
       <ResultsArea>
