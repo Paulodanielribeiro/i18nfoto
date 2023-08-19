@@ -8,7 +8,7 @@ import ptBR from '../../assets/img/ptBR.png';
 import styles from './styles.module.css';
 
 const Header: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);

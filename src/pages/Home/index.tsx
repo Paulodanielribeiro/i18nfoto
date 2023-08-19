@@ -42,12 +42,12 @@ const Home = () => {
   } = useContext(UserContext)
 
   
+  const { t } = useTranslation();
 
   const searchPhotos = async () => {
     isLoading(true)
     setPhotos([])
     setTotalPages(0)
-    const {t} = useTranslation();
     const photosFound = await photoService.findPhotos(
       query,
       page,
